@@ -9,7 +9,10 @@ class AllData(APIView):
     def get(self, request, format = None):
         qtype= request.GET['type']
         equation = request.GET['equation']
+        equation = equation.replace(" ", "+")
         equation = equation.replace("^", "**")
+        equation = equation.replace("{", "(")
+        equation = equation.replace("}", ")")
         answer = "default"
 
         #put up the functions here
