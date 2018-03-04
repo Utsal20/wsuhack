@@ -20,7 +20,7 @@ class AllData(APIView):
             proc = diff.Diff(equation, request.GET['var'], request.GET['times'])
             answer = proc.latex_print()
         elif qtype == 'integ':
-            proc = integration.Integrate(equation, request.GET['min'],request.GET['max'])
+            proc = integration.Integrate(equation, request.GET['var'], request.GET['min'],request.GET['max'])
             answer = proc.latex_print()
         elif qtype == 'expand':
             proc = expand.Expand(equation)
