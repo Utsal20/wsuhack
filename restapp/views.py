@@ -34,4 +34,4 @@ class AllData(APIView):
             answer = proc.latex_print()
 
         #might need to serialize the data to native python data types
-        return Response(data = {'answer' : answer, 'equation':equation}, status = status.HTTP_200_OK, headers = {'Content-Type':'application/json', 'Accept':'application/json'})
+        return Response(data = {'answer' : answer, 'equation':equation}, status = status.HTTP_200_OK, headers = {'Access-Control-Allow-Origin':'*', 'Content-Type':'application/json', 'Accept':'application/json'})
