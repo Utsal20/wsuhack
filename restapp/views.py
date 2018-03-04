@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from rest_framework.views import APIView
+from rest_framework import status
 from rest_framework.response import Response
 # import required modules written by Tsengunn
 from restapp import diff, expand, factor, integration, simplify
@@ -33,4 +34,4 @@ class AllData(APIView):
             answer = proc.latex_print()
 
         #might need to serialize the data to native python data types
-        return Response({'answer' : answer, 'equation':equation})
+        return Response(data = {'answer' : answer, 'equation':equation}, status = status.HTTP_200_OK, headers = {'Content-Type':'application/json', 'Accept':'application/json'})
