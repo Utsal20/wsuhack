@@ -1,5 +1,8 @@
 # wsuhack
-This is the Django API backend for the application my team built for CrimsonCode 2018, a hackathon in WSU, Pullman.  
+This is the Django API backend for the application my team built for CrimsonCode 2018, a hackathon in WSU, Pullman. 
+  
+Find the website here: http://newtonify.tsenguun.com/  
+  
 Requirements:  
 - Django  
 - DjangoRestFramework  
