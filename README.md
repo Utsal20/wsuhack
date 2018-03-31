@@ -2,6 +2,7 @@
 This is the Django API backend for the application my team built for CrimsonCode 2018, a hackathon in WSU, Pullman. 
   
 Find the website here: http://newtonify.tsenguun.com/  
+Or here: http://www.newtonify.com/#/  
 Check out the amazing UI!  
 Hit 'Copy' to get your answers in Latex format.  
   
